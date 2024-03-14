@@ -25,13 +25,15 @@ function App() {
         <img src={openingcar} />
     </div>
     </div>
+    <div className='mobilecent'>
       <div className="content">
         <h1>Simplify car transport with <span>A&A Ship</span></h1>
         <h3>Experience seamless vehicle transportation with our trusted car transport services, ensuring reliable and efficient delivery to your desired destination.</h3>
-        {/* <div className='button-group'>
-          <button className='opener-button'>1</button>
-          <button className='opener-button'>2</button>
-        </div> */}
+        <div className='button-group'>
+          <button className='opener-button'>Get in Touch</button>
+          <button className='opener-button second'>Options</button>
+        </div>
+      </div>
       </div>
       <div className="bottom-box">
   <div className="column">
