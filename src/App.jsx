@@ -136,7 +136,7 @@ function App() {
             <div className="contact-info">
               <h3>Our Contact</h3>
                 <h2>Get In Touch With Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dolor. Lorem ipsum dolor sit amet.
+                <p id='subtit'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dolor. Lorem ipsum dolor sit amet.
                 </p>
                 <div className='linkers'>
                   <div className='address'>
@@ -165,7 +165,7 @@ function App() {
                         <input type="text" id="last-name" name="last-name" required />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="email">Email:</label>
+                        <label htmlFor="email">Email:</label><br></br>
                         <input type="email" id="email" name="email" required />
                     </div>
                     <div className="form-group">
@@ -179,6 +179,14 @@ function App() {
     </div>
     <div className='testimonial-main'>
 
+    </div>
+        <div className="newsletter-banner">
+          <h2>Subscribe To Our News</h2>
+      <p>Subscribe to our newsletter to get all of our special updates and offers</p>
+      <div className="subscribe-form">
+        <input type="email" placeholder="Enter your email" />
+        <button>Subscribe</button>
+      </div>
     </div>
     </>
   );
