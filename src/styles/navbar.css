@@ -39,3 +39,16 @@
     color: white;
     border-radius: 5px;
 }
+@media screen and (max-width: 1000px) {
+    .links a{
+        display: none;
+    }
+        #blue-signup {
+            margin-right: 1rem;
+            padding: 7px 24px;
+            background-color: #1572D3;
+            color: white;
+            border-radius: 5px;
+        }
+
+}
