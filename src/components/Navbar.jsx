@@ -14,8 +14,8 @@ const Navbar = () => {
         <a href="#">Careers</a>
       </div>
       <div className="auth">
-        <a href="#">Sign Up</a>
-        <a href="#" id='blue-signup'>Sign In</a>
+        <a href="./Signup">Sign Up</a>
+        <a href="./Login" id='blue-signup'>Login</a>
       </div>
     </div>
   );

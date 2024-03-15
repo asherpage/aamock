@@ -11,7 +11,8 @@ import { IoShieldCheckmark } from "react-icons/io5";
 import { FaLock } from "react-icons/fa";
 import { IoExtensionPuzzleSharp } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa";
-
+import Log from './components/App'
+import Signup from './components/Signup'
 function App() {
   return (
     <>
