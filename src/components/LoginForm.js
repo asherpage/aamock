@@ -1,6 +1,7 @@
 // LoginForm.js
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../styles/login.css'
 
 function LoginForm({ onLogin }) {
     const [email, setEmail] = useState('');
@@ -23,15 +24,31 @@ function LoginForm({ onLogin }) {
     };
 
     return (
-        <div>
-            <h2>Login</h2>
-            {error && <p>{error}</p>}
-            <form onSubmit={handleSubmit}>
-                <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-                <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-                <button type="submit">Login</button>
+        <div className="log-container">
+    <div className="log-box">
+        <div className="log-left-side">
+            <img src="path_to_your_image.jpg" alt="Your Image" />
+        </div>
+        <div className="log-right-side">
+            <h2>Login Form</h2>
+            <form>
+                <div className="input-group">
+                    <label htmlFor="username">Username:</label>
+                    <input className='log-input' type="text" id="username" name="username" />
+                </div>
+                <div className="input-group">
+                    <label htmlFor="password">Password:</label>
+                    <input className='log-input' type="password" id="password" name="password" />
+                </div>
+                <div className="input-group checkbox-group">
+                    <input type="checkbox" id="save-password" name="save-password" />
+                    <label htmlFor="save-password">Save Password</label>
+                </div>
+                <button type="submit" className='log-button'>Login</button>
             </form>
         </div>
+    </div>
+</div>
     );
 }
 
