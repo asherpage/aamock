@@ -1,0 +1,52 @@
+.testimonial-container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-x: hidden;
+    /* Enable horizontal scrolling */
+}
+#saying{
+    color: #1571d3;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.testimonial-cards {
+    display: flex;
+    gap: 20px;
+    flex-shrink: 0;
+    /* Prevent flex items from shrinking */
+}
+.testimonial-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    /* Set minimum width for each card */
+}
+
+.rating {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.star-icon {
+    color: #FFD700;
+    /* Gold color */
+}
+
+.testimonial-card h2 {
+    margin-bottom: 10px;
+}
+
+.testimonial-card p {
+    margin: 0;
+}
+#sayingmain{
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+    text-align: center;
+}
