@@ -177,7 +177,7 @@ h3{
     /* Adjust as needed */
     margin: 10px;
     padding: 30px 20px;
-    background-color: #1571d308;
+    background-color: #f0f0f000;
     display: flex;
     align-items: center; /* Align items vertically center */
 }
@@ -185,6 +185,10 @@ h3{
 .our-icon {
     margin-right: 10px; /* Adjust as needed */
     font-size: 50px;
+    color: #1571d3;
+    background-color: #1571d31b;
+    padding: 12px;
+    border-radius: 5px;
 }
 
 .our-content {
@@ -194,7 +198,7 @@ h3{
 
 .our-content h2 {
     margin-top: 0;
-    color: #101010;
+    color: #1571d3;
     margin-bottom: 0px;
 }
 
@@ -227,13 +231,12 @@ h3{
     text-align: center;
 }
 .contact-main{
-    background-color: #1571d308;
+    background-color: #ffffff;
     width: 100%;
     height: 600px;
 
 }
 .contact-container {
-    background-color: #1571d308;
     padding: 2rem 0 5rem 0;
     display: flex;
     justify-content: space-around;
@@ -261,7 +264,7 @@ h3{
 
 .contact-form {
     width: 30%;
-    background-color: #1571d308;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 5px;
 }
@@ -271,7 +274,6 @@ h3{
 }
 
 .form-group input {
-    background-color: #1571d308;
     width: 100%;
     padding: 8px;
     border-radius: 5px;
@@ -280,7 +282,6 @@ h3{
     margin-top: 5px;
 }
 .form-group textarea {
-    background-color: #1571d308;
     width: 100%;
     padding: 8px;
     border-radius: 5px;
@@ -334,12 +335,11 @@ h3{
     color: #1571d3;
 }
 .testimonial-main{
-    width: 100%;
+    width: 800px;
     height: fit-content;
-    background-color: #ffffff;
+    background-color: #791f1f;
 }
 .newsletter-banner {
-    background-color: #1571d320;
     padding: 40px;
     text-align: center;
 }
@@ -415,6 +415,61 @@ h3{
 }
 .subscribe-form button:hover {
     background-color: #0056b3;
+}
+.quote-back{
+    height: 500px;
+    background-image: url(./images/luhquoe.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-container {
+    height: 200px;
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.contact-button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-button span {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-button .button-slide {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 0;
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover .button-slide {
+    left: 0;
+}
+@media screen and (max-width: 650px) {
+    .wrapper {
+        font-size: 14px;
+    }
 }
 @media screen and (max-width: 1500px) {
     .openingcar {

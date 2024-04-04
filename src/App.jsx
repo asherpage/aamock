@@ -2,6 +2,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Testimonial from './components/Testimonial';
+import Footer from './components/Footer';
 import './styles/home.css'
 import openingcar from './styles/images/openingcar.png'
 import { HiOutlineLocationMarker } from "react-icons/hi";
@@ -78,26 +79,6 @@ function App() {
   <button className='search-button'>Search</button>
 </div>
     </div>
-    <div className='flex-cont'>
-      <div className='the-text'>
-        <h1>Get An Instant Quote</h1>
-        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro a cupiditate necessitatibus incidunt explicabo assumenda ducimus tempore, reprehenderit fugit labore totam, id, praesentium minima minus impedit placeat doloremque modi? Natus ad ab hic, fugiat quasi, magni similique, neque distinctio dolorum placeat rerum corporis a impedit. Vero atque sit commodi! <span>Read More.</span></h5>
-        <button className='opener-button'>Get Quote</button>
-      </div>
-      <div className='imagyo'>
-        <img src={carro}></img>
-      </div>
-    </div>
-    <div className='flex-cont rev'>
-      <div className='the-text'>
-        <h1>Get An Instant Quote</h1>
-        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro a cupiditate necessitatibus incidunt explicabo assumenda ducimus tempore, reprehenderit fugit labore totam, id, praesentium minima minus impedit placeat doloremque modi? Natus ad ab hic, fugiat quasi, magni similique, neque distinctio dolorum placeat rerum corporis a impedit. Vero atque sit commodi! <span>Read More.</span></h5>
-        <button className='opener-button'>More Info</button>
-      </div>
-      <div className='imagyo'>
-        <img src={keys}></img>
-      </div>
-    </div>
     <div className='our-steps'>
       <div className='text-wrap'>
         <h3>ADVANTAGES</h3>
@@ -153,10 +134,29 @@ function App() {
       </div>
     </div>
     </div>
-        <div className='testimonial-main'>
-      <Testimonial />
+    <div className='flex-cont'>
+      <div className='the-text'>
+        <h1>Get An Instant Quote</h1>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro a cupiditate necessitatibus incidunt explicabo assumenda ducimus tempore, reprehenderit fugit labore totam, id, praesentium minima minus impedit placeat doloremque modi? Natus ad ab hic, fugiat quasi, magni similique, neque distinctio dolorum placeat rerum corporis a impedit. Vero atque sit commodi! <span>Read More.</span></h5>
+        <button className='opener-button'>Get Quote</button>
+      </div>
+      <div className='imagyo'>
+        <img src={carro}></img>
+      </div>
     </div>
-    <div>
+    <div className='flex-cont rev'>
+      <div className='the-text'>
+        <h1>Get An Instant Quote</h1>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro a cupiditate necessitatibus incidunt explicabo assumenda ducimus tempore, reprehenderit fugit labore totam, id, praesentium minima minus impedit placeat doloremque modi? Natus ad ab hic, fugiat quasi, magni similique, neque distinctio dolorum placeat rerum corporis a impedit. Vero atque sit commodi! <span>Read More.</span></h5>
+        <button className='opener-button'>More Info</button>
+      </div>
+      <div className='imagyo'>
+        <img src={keys}></img>
+      </div>
+    </div>
+    
+        
+    {/* <div>
     <div className='contact-main'>
       <div className="contact-container">
             <div className="contact-info">
@@ -203,16 +203,21 @@ function App() {
             </div>
         </div>
     </div>
-    </div>
-  
+    </div> */}
+    <div className='quote-back'>
+          <Testimonial />
+  </div>
         <div className="newsletter-banner">
           <h2>Subscribe To Our News</h2>
       <p>Subscribe to our newsletter to get all of our special updates and offers</p>
+
       <div className="subscribe-form">
         <input type="email" placeholder="Enter your email" />
         <button>Subscribe</button>
       </div>
     </div>
+
+    <Footer />
     </>
   );
 }
