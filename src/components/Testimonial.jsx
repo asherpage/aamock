@@ -57,6 +57,11 @@ const Testimonials = () => {
   };
 
   return (
+    <>
+    <div className="testimonial-container">
+        <p className="testimonial-subtitle">TESTIMONIALS</p>
+  <h2 className="testimonial-title">What Are People Saying?</h2>
+  <div className="testimonials-slider">
     <div className="testimonials-container">
       <div className="prev-button" onClick={prevTestimonial}>
         <FaArrowLeft />
@@ -79,6 +84,10 @@ const Testimonials = () => {
         <FaArrowRight />
       </div>
     </div>
+  </div>
+</div>
+    
+    </>
   );
 };
 

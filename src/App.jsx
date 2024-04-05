@@ -207,7 +207,7 @@ function App() {
     <div className='quote-back'>
           <Testimonial />
   </div>
-        <div className="newsletter-banner">
+        {/* <div className="newsletter-banner">
           <h2>Subscribe To Our News</h2>
       <p>Subscribe to our newsletter to get all of our special updates and offers</p>
 
@@ -215,7 +215,7 @@ function App() {
         <input type="email" placeholder="Enter your email" />
         <button>Subscribe</button>
       </div>
-    </div>
+    </div> */}
 
     <Footer />
     </>
