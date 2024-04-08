@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import './index.css';
 import App from './App';
+import Contact from './Contact';
+import Application from './Application';
 import Signup from './components/Signup';
 import Login from './components/LoginForm';
 import {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
   },{
     path:"/login",
     element: <Login />
+  },
+  {
+    path:"/contact",
+    element: <Contact />
+  },
+  {
+    path:"/application",
+    element: <Application />
   }
 ]);
 

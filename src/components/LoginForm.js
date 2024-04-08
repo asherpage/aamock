@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../styles/login.css'
+import phone from '../styles/images/2d9111c8986942157eb784b9611815fb.png'
 
 function LoginForm({ onLogin }) {
     const [email, setEmail] = useState('');
@@ -27,10 +28,10 @@ function LoginForm({ onLogin }) {
         <div className="log-container">
     <div className="log-box">
         <div className="log-left-side">
-            <img src="path_to_your_image.jpg" alt="Your Image" />
+            <img src={phone} alt="Your Image" />
         </div>
         <div className="log-right-side">
-            <h2>Login Form</h2>
+            <h2><span>A&A </span>Login Form</h2>
             <form>
                 <div className="input-group">
                     <label htmlFor="username">Username:</label>

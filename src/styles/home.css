@@ -1,5 +1,6 @@
 body{
     overflow-x:hidden;
+    
 }
 .container {
     position: relative;
@@ -464,6 +465,166 @@ h3{
 .contact-button:hover .button-slide {
     left: 0;
 }
+.banner-containerski {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    height: 300px;
+    /* Adjusted height */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.benefit-container {
+    display: flex;
+    align-items: center;
+    font-family: tommy;
+}
+.bullet{
+    color: #1571d3;
+    margin-right: 15px;
+}
+
+.feature-box {
+    padding: 1rem 4rem;
+    opacity: 1;
+}
+
+.feature-box h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.feature-box h2 {
+    font-size: 1.5rem;
+    margin-left: 0.2rem;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    margin-left: 1rem;
+    width: 30rem;
+}
+
+.feature-box ul {
+    list-style: none;
+}
+
+.form-container {
+    display: flex;
+    z-index: 0;
+    height: fit-content;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 10px rgba(30, 30, 30, 0.544);
+    width: 40rem;
+    padding: 0rem 4rem 2rem;
+    opacity: 1;
+}
+
+.form-wrapper {
+}
+
+.form-wrapper h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form-container h2 {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.form-container input,
+.form-container select {
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+    height: 2.2rem;
+    padding-left: 0.5rem;
+    font-weight: 400;
+}
+
+.form-container button {
+    background-color: #1571d3;
+    height: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: #ffffff;
+}
+
+.form-container p {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: #3f3f3f;
+}
+.form-container textarea {
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+    height: 6rem;
+    padding-left: 0.5rem;
+    font-weight: 400;
+    resize: none;
+}
+
+.check {
+    height: 0.5rem;
+    display: inline-block;
+}
+
+label {
+    display: inline-block;
+}
+
+.doneText {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 4rem;
+}
+
+.doneText p {
+    margin: 0.5rem 0 0.5rem 0;
+    color: black;
+    display: none;
+}
+
+@media only screen and (max-width: 1600px) {
+    .form-container {
+        padding: 0.2rem 3rem;
+    }
+
+    .form-container h2 {
+        font-size: 0.8rem;
+        margin-top: 0.8rem;
+    }
+
+    .form-container input {
+        height: 1.8rem;
+    }
+
+    .benefit-container h1 {
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+
+    .benefit-container h2 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        display: inline-block;
+        margin-left: 0.2rem;
+    }
+
+    .benefit-container p {
+        font-size: 0.9rem;
+        margin-left: 1rem;
+        width: 30rem;
+    }
+}
 @media screen and (max-width: 650px) {
     .wrapper {
         font-size: 14px;
@@ -482,6 +643,14 @@ h3{
             /* Adjust size as needed */
             height: auto;
         }
+}
+@media only screen and (max-width: 1450px) {
+    .banner-containerski {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
 }
 @media screen and (max-width: 1350px) {
     .openingcar {
@@ -552,6 +721,9 @@ h3{
     }
 }
 @media screen and (max-width: 1000px) {
+    .form-container {
+            width: 70%;
+        }
     .openingcar {
         display: none;
     }

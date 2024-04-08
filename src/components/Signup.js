@@ -1,5 +1,6 @@
 import { useState} from 'react'
 import axios from 'axios';
+import phone from '../styles/images/2d9111c8986942157eb784b9611815fb.png'
 
 const Signup = ({ onLogin }) =>{
     const [email, setEmail] = useState("")
@@ -32,33 +33,47 @@ const Signup = ({ onLogin }) =>{
 }
 
     return(
-        <div>
-            <h2>Signup</h2>
+        <div className="log-container">
+    <div className="log-box">
+        <div className="log-left-side">
+            <img src={phone} alt="Your Image" />
+        </div>
+        <div className="log-right-side">
+            <h2><span>A&A </span>Signup</h2>
             <form onSubmit={handleSignup}>
+                <label htmlFor="username">Email:</label>
                 <input
+                className='log-input'
                  type="email"
-                 placeholder='Enter Email'
                  value={email}
                  onChange={(e)=> setEmail(e.target.value)}
                  required
                  />
+                 <label htmlFor="username">Password:</label>
                  <input
+                 className='log-input'
                  type="password"
-                 placeholder='Enter Password'
                  value={password}
                  onChange={(e)=> setPassword(e.target.value)}
                  required
                  />
+                 <label htmlFor="username">Confirm Password:</label>
                  <input
+                 className='log-input'
                  type="password"
-                 placeholder='confirm Password'
                  value={confirmPassowrd}
                  onChange={(e)=> setConfirmPassowrd(e.target.value)}
                  required
                  />
-                 <button type='submit'>Signup</button>
+                 <div className="input-group checkbox-group">
+                    <input type="checkbox" id="save-password" name="save-password" />
+                    <label htmlFor="save-password">Save Password</label>
+                </div>
+                 <button type='submit' className='log-button'>Signup</button>
             </form>
         </div>
+    </div>
+</div>
     )
 }
 
